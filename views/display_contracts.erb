@@ -1,0 +1,32 @@
+<head>
+  <link href="<%= url('/contracts-styles.css') %>" rel="stylesheet" type="text/css" />
+  <title>What did I use?</title>
+</head>
+
+<div class='opensea-container'>
+    <h1>What did I use?</h1>
+    
+    <table class="table-fill">
+      <thead>
+        <tr>
+          <th class="text-left">Contract Name</th>
+          <th class="text-left">Address</th>
+          <th class="text-left">Times used</th>
+        </tr>
+      </thead>
+      
+      <tbody class="table-hover">
+        <% @table_data.each do |row| %>
+          <tr>
+            <td class="text-left"><%= row[:name] %></td>
+            <td class="text-left"><%= row[:address] %></td>
+            <td class="text-left"><%= row[:times_used] %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+  <div class='footer'>
+    Built by fanahova.eth (<a href='https://twitter.com/FanaHOVA' target='_blank'>@fanahova</a>) <br /><br />
+  </div>
+</div>

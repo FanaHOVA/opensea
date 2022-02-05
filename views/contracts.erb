@@ -1,0 +1,30 @@
+<head>
+  <link href="<%= url('/contracts-styles.css') %>" rel="stylesheet" type="text/css" />
+  <title>What did I use?</title>
+</head>
+
+<div class='opensea-container'>
+    <h1>What did I use?</h1>
+    
+    <p>Look at what contracts you interacted with, and how many times.</p>
+      
+
+
+  <div>
+    <form method="POST" action="/redirect_to_usage">
+      <input placeholder='Insert your address' name="address">
+
+      <a class='neon-link' href="#" onclick="this.parentNode.submit(); return false;">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Display List
+      </a>
+    </form>
+  </div>
+
+  <div class='footer'>
+    Built by fanahova.eth (<a href='https://twitter.com/FanaHOVA' target='_blank'>@fanahova</a>) <br /><br />
+  </div>
+</div>

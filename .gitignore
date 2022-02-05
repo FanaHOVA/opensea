@@ -1,0 +1,5 @@
+.env
+*.csv
+seeding_database.csv
+.byebug_history
+private/*
